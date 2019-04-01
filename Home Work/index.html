@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <section>
+        <div class="container-fluid ">
+            <div class="row justify-content-center" >
+                <div class="col-4">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control mt-3" id="nameInput" placeholder="Enter name">
+                            <input type="text" class="form-control mt-3" id="surnameInput" placeholder="Enter surname">
+                            <input type="text" class="form-control mt-3" id="birthdayInput" placeholder="Enter birthday">
+                            <small id="birtdayHelp" class="form-text text-muted">Birthday format should be like that:2015-03-25</small>
+                            <input type="text" class="form-control mt-3" id="emailInput" placeholder="Enter email">
+                        </div>
+                        <button type="button" onclick="getValue()" class="btn btn-primary">Submit</button>
+                        <p class="mt-4">Delete user form list</p> 
+                    </form>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-4">
+                                <input type="text" class="form-control" id="idInput" placeholder="Enter ID">
+                                </div>
+                                <div class="col-8">
+                                        <button type="button" class="btn btn-warning">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                                <p class="mt-4">Sort list by</p> 
+                                <button type="button" class="btn btn-outline-primary">ID</button>
+                                <button type="button" class="btn btn-outline-primary">Name</button>
+                                <button type="button" class="btn btn-outline-primary">Surname</button>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul id="ulIdSelect" class="list-group mt-2">    
+                                        </ul>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="sript.js"></script>
+</body>
+</html>
